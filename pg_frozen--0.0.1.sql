@@ -1,0 +1,3 @@
+CREATE OR REPLACE FUNCTION
+frozen(tableoid oid, tid tid) RETURNS int AS 'MODULE_PATHNAME', 'frozen'
+LANGUAGE C STRICT;
